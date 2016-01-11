@@ -12,6 +12,7 @@
     "jasmine-node": "^1.14.5"
   },
   "dependencies": {
+    "ejs": "^2.3.4",
     "express": "^4.13.3"
   }
 }

@@ -1,19 +1,16 @@
 var express = require('express');
 var app = express();
-var http = require('http');
+var server = require('http').createServer(app);
 
-var server = http.createServer(app);
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(request, response) {
-  response.json("Hello world");
-});
-
-app.get('/page1', function(request, response) {
-  response.send('<title>title</title><p>page 1</p>');
+app.get('/', function(request, response){
+  response.render('index');
 });
 
 server.listen(3000, function(){
-  console.log('Server listening on port 3000');
+  console.log('Server running on port 3000');
 });
 
 module.exports = server;
