@@ -1,5 +1,3 @@
-Node with Express Seed Project
-==========
 
 A simple Node server with Express.js and unit test set up using jasmine-node.
 
@@ -23,3 +21,6 @@ Visit http://localhost:3000
 ```sh
 $ npm test
 ```
+=======
+# express-mongo-jasmine
+A Sample project to test azure pipelines
