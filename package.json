@@ -4,7 +4,7 @@
   "description": "node-express",
   "main": "server.js",
   "scripts": {
-    "test": "node_modules/jasmine-node/bin/jasmine-node spec/ --verbose"
+    "test": "jasmine-node spec/ --verbose"
   },
   "author": "Kevin Lanzon",
   "license": "ISC",
